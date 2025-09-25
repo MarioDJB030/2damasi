@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>2damasi</title>
+    <link href="https://mariodjb030.github.io/2damasi/feed.xml" rel="self" />
+    <link href="https://mariodjb030.github.io/2damasi" />
+    <updated>2025-09-25T20:10:47+02:00</updated>
+    <author>
+        <name>Mario De Juana Baeza</name>
+    </author>
+    <id>https://mariodjb030.github.io/2damasi</id>
+
+    <entry>
+        <title>Post 1</title>
+        <author>
+            <name>Mario De Juana Baeza</name>
+        </author>
+        <link href="https://mariodjb030.github.io/2damasi/post-1.html"/>
+        <id>https://mariodjb030.github.io/2damasi/post-1.html</id>
+
+        <updated>2025-09-25T20:10:47+02:00</updated>
+            <summary>
+                <![CDATA[
+                    EJEMPLO
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>EJEMPLO</p>
+            ]]>
+        </content>
+    </entry>
+</feed>
