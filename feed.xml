@@ -3,12 +3,309 @@
     <title>2damasi</title>
     <link href="https://mariodjb030.github.io/2damasi/feed.xml" rel="self" />
     <link href="https://mariodjb030.github.io/2damasi" />
-    <updated>2025-10-16T19:58:16+02:00</updated>
+    <updated>2025-11-03T20:31:46+01:00</updated>
     <author>
         <name>Mario De Juana Baeza</name>
     </author>
     <id>https://mariodjb030.github.io/2damasi</id>
 
+    <entry>
+        <title>Reproductor Multimedia Prompts</title>
+        <author>
+            <name>Mario De Juana Baeza</name>
+        </author>
+        <link href="https://mariodjb030.github.io/2damasi/reproductor-multimedia-prompts.html"/>
+        <id>https://mariodjb030.github.io/2damasi/reproductor-multimedia-prompts.html</id>
+
+        <updated>2025-11-03T19:25:05+01:00</updated>
+            <summary>
+                <![CDATA[
+                    - Prompt = Azul Derecha - Respuesta = Negro Izquierda Quiero que realices un prompt para que una IA, en&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>- Prompt = <span style="color: #236fa1;">Azul Derecha</span><br>- Respuesta = Negro Izquierda</p>
+<p class="align-right"><span style="color: #236fa1;"><br>Quiero que realices un prompt para que una IA, en el que diga como normas:</span><br><span style="color: #236fa1;">1ºActúa como un desarrollador con experiencia de varios años en el desarrollo de aplicaciones.</span><br><br><span style="color: #236fa1;">2ºTodo lo que te pida a continuación debes desarrollarlo mediante HTML, CSS y JavaScript VANILLA en 1 archivo.</span><br><br><span style="color: #236fa1;">3º Debes crear una interfaz minimalista, e incluir modo claro y oscuro (colores blanco y negro como principal y transition color como secundario).</span><br><br><span style="color: #236fa1;">4º No añadas funcionalidades que solo funcionen desde este chat. Debe funcionar desde cualquier movil o ordenador con internet.</span><br><br><span style="color: #236fa1;">Y despues vas a explicar que quieres un Reproductor multimedia, (imagenes, audio y video locales), piensa en como debe ser segun otras opciones ya conocidas (como por ejemplo elegir un directorio donde se guardaran los archivos que leera la web y ademas especificale como debe ser la interfaz para que sea simple pero llamativa, ADEMAS debe incorporar una función de calendario que por ejemplo se puede poner alertas en fechas concretas y que suene un sonido al llegar a la fecha exacta (hora incluida), piensa que otras funcionalidades podrian añadirse que sean utiles (teniendo en cuenta las normas) y añadelo al prompt</span></p>
+<p> </p>
+<p>Aquí tienes el prompt que puedes usar, diseñado para solicitarle a una IA la creación de tu aplicación, siguiendo todas las normas y funcionalidades que has descrito.</p>
+<hr>
+<p> </p>
+<h3>🟢 INICIO DEL PROMPT</h3>
+<p> </p>
+<p>Actúa como un desarrollador senior con amplia experiencia en el desarrollo de aplicaciones web.</p>
+<p>Tu tarea es crear una aplicación web completa y funcional en <strong>un solo archivo HTML</strong>. Esto significa que todo el código <strong>CSS</strong> y <strong>JavaScript VANILLA</strong> (sin librerías ni frameworks) debe estar incorporado directamente en el archivo HTML, usando las etiquetas <code>&lt;style&gt;</code> y <code>&lt;script&gt;</code> respectivamente.</p>
+<p>Debes seguir estas normas estrictamente:</p>
+<ol start="1">
+<li>
+<p><strong>Interfaz Minimalista y Tema Dual:</strong></p>
+<ul>
+<li>
+<p>La interfaz debe ser limpia, moderna y responsive (adaptable a móviles y escritorio).</p>
+</li>
+<li>
+<p>Debe incluir un interruptor (toggle switch) para cambiar entre un <strong>modo claro</strong> y un <strong>modo oscuro</strong>.</p>
+</li>
+<li>
+<p><strong>Colores Modo Claro:</strong> Fondo principal blanco (<code>#FFFFFF</code>), texto principal negro (<code>#000000</code>).</p>
+</li>
+<li>
+<p><strong>Colores Modo Oscuro:</strong> Fondo principal negro (<code>#000000</code>), texto principal blanco (<code>#FFFFFF</code>).</p>
+</li>
+<li>
+<p><strong>Color de Acento:</strong> Usa un color secundario (ej. un azul neutro como <code>#3498db</code> o un gris como <code>#888888</code>) para elementos interactivos (botones, enlaces, el interruptor de tema) y para las transiciones.</p>
+</li>
+<li>
+<p>Las transiciones entre modos de color deben ser suaves (ej. <code>transition: background-color 0.3s ease, color 0.3s ease;</code>).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Funcionalidad Universal:</strong></p>
+<ul>
+<li>
+<p>La aplicación debe ser 100% funcional en cualquier navegador moderno (Chrome, Firefox, Safari) tanto en ordenadores como en dispositivos móviles.</p>
+</li>
+<li>
+<p><strong>No añadas funcionalidades que dependan de este chat</strong> o de un backend. Todo debe funcionar localmente en el navegador del usuario.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p> </p>
+<h3>Proyecto: Reproductor Multimedia y Gestor de Alertas</h3>
+<p> </p>
+<p>Quiero que desarrolles una aplicación web con dos funciones principales: un reproductor de medios locales y un calendario de alertas.</p>
+<p> </p>
+<h4>1. Diseño de la Interfaz (Layout)</h4>
+<p> </p>
+<p>Para que la interfaz sea simple pero llamativa, propongo un diseño de dos columnas (en vista de escritorio):</p>
+<ul>
+<li>
+<p><strong>Columna Izquierda (Barra Lateral):</strong></p>
+<ul>
+<li>
+<p>Debe ser estrecha y contener la "Biblioteca de Medios" (la lista de archivos cargados) y la sección de "Alertas".</p>
+</li>
+<li>
+<p>En la vista móvil, esta columna debe colapsarse y ser accesible a través de un botón de "Menú" (icono de hamburguesa).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Columna Derecha (Área Principal):</strong></p>
+<ul>
+<li>
+<p>Este será el espacio principal donde se mostrará el reproductor (el video, la imagen o los controles de audio) y la interfaz para añadir nuevas alertas.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h4>2. Funcionalidad: Reproductor Multimedia</h4>
+<p> </p>
+<p>La aplicación debe permitir a los usuarios cargar y reproducir archivos multimedia locales.</p>
+<ul>
+<li>
+<p><strong>Carga de Archivos:</strong></p>
+<ul>
+<li>
+<p>Dado que no se puede acceder a un "directorio" local por seguridad, implementa un botón "Cargar Archivos".</p>
+</li>
+<li>
+<p>Este botón usará un <code>&lt;input type="file" multiple accept="image/*, audio/*, video/*"&gt;</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Biblioteca de Medios:</strong></p>
+<ul>
+<li>
+<p>Los archivos seleccionados por el usuario deben aparecer en una lista en la barra lateral (la "Biblioteca").</p>
+</li>
+<li>
+<p>El usuario debe poder hacer clic en cualquier archivo de esta lista para reproducirlo en el área principal.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Reproductor:</strong></p>
+<ul>
+<li>
+<p><strong>Imágenes:</strong> Debe mostrar la imagen. Añade botones "Anterior" y "Siguiente" para navegar entre todas las imágenes cargadas (modo galería).</p>
+</li>
+<li>
+<p><strong>Audio y Video:</strong> Debe usar las etiquetas <code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code> de HTML5. Asegúrate de incluir los controles nativos (play/pause, barra de progreso, volumen y pantalla completa para videos).</p>
+</li>
+<li>
+<p><strong>Reproducción Continua:</strong> Al terminar un archivo de audio o video, debe saltar automáticamente al siguiente archivo del mismo tipo en la lista de la biblioteca.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h4>3. Funcionalidad: Calendario de Alertas</h4>
+<p> </p>
+<p>Esta función permitirá al usuario establecer recordatorios.</p>
+<ul>
+<li>
+<p><strong>Crear Alerta:</strong> El usuario debe poder:</p>
+<ol start="1">
+<li>
+<p>Seleccionar una fecha y hora futuras.</p>
+</li>
+<li>
+<p>Escribir un mensaje corto (ej. "Reunión de equipo").</p>
+</li>
+<li>
+<p>Guardar la alerta.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Gestión de Alertas:</strong> Las alertas activas deben mostrarse en una lista (en la barra lateral), con un botón para eliminarlas.</p>
+</li>
+<li>
+<p><strong>Notificación Sonora:</strong></p>
+<ul>
+<li>
+<p>En la fecha y hora exactas de la alerta, la aplicación <strong>debe reproducir un sonido</strong>.</p>
+</li>
+<li>
+<p>Para cumplir con la norma de 1 solo archivo, puedes usar la <strong>API de Web Audio</strong> (<code>createOscillator</code>) para generar un "beep" simple, o (mejor aún) incrustar un archivo de sonido muy corto (ej. .mp3 o .wav) en el JS como una <strong>cadena Base64</strong> y reproducirlo con la API <code>Audio</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Notificación Visual:</strong> Además del sonido, debe mostrarse una notificación simple (ej. un <code>alert()</code> de JavaScript o un modal personalizado) con el mensaje de la alerta.</p>
+</li>
+</ul>
+<p> </p>
+<h4>4. Funcionalidades Adicionales (Extras Útiles)</h4>
+<p> </p>
+<p>Añade también estas mejoras, siempre respetando las normas:</p>
+<ul>
+<li>
+<p><strong>Persistencia (LocalStorage):</strong></p>
+<ol start="1">
+<li>
+<p>Guarda el <strong>estado del tema</strong> (claro/oscuro) en <code>localStorage</code>. Si el usuario recarga la página, debe recordar su preferencia.</p>
+</li>
+<li>
+<p>Guarda la <strong>lista de alertas</strong> en <code>localStorage</code> (como un string JSON). Las alertas deben persistir aunque se cierre el navegador. <i>(Nota: Los archivos multimedia no se pueden guardar; el usuario deberá cargarlos en cada sesión).</i></p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Asociar Media a Alertas (Avanzado):</strong></p>
+<ul>
+<li>
+<p>Al crear una alerta, permite al usuario seleccionar opcionalmente un archivo de <strong>audio</strong> de la biblioteca cargada.</p>
+</li>
+<li>
+<p>Cuando la alerta se active, en lugar del "beep", se reproducirá el archivo de audio seleccionado (ideal para usarlo como despertador con una canción).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Buscador en Biblioteca:</strong></p>
+<ul>
+<li>
+<p>Añade una barra de búsqueda simple encima de la lista de la biblioteca para filtrar los archivos cargados por su nombre.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Por favor, entrega todo el código en un único bloque, comenzando por el <code>&lt;!DOCTYPE html&gt;</code> y terminando con <code>&lt;/html&gt;</code>, incluyendo el CSS en <code>&lt;style&gt;</code> y el JS en <code>&lt;script&gt;</code>. Comenta tu código (especialmente el JavaScript) para explicar las partes lógicas.</p>
+<p> </p>
+<h3>🟢 FIN DEL PROMPT</h3>
+<p> </p>
+<p class="align-right"><span style="color: #236fa1;">Le envio el prompt tal cual*</span></p>
+<p> </p>
+<p>Claro, aquí tienes la aplicación web completa en un solo archivo HTML, siguiendo todas tus especificaciones.</p>
+<p>He implementado el tema dual (claro/oscuro) con persistencia, el diseño responsive de dos columnas que se colapsa en móvil, el reproductor multimedia completo (imágenes con galería, audio/video con reproducción continua) y el gestor de alertas con notificaciones sonoras (usando la Web Audio API) y visuales (un modal personalizado).</p>
+<p>También he incluido las funciones avanzadas: persistencia de alertas en <code>localStorage</code>, la capacidad de asociar un audio cargado a una alerta y un buscador para la biblioteca de medios. El código está comentado en español para explicar la lógica.</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="2">
+<figure class="gallery__item"><a href="https://mariodjb030.github.io/2damasi/media/posts/2/gallery/Captura-de-pantalla-2025-11-03-192304.png" data-size="1163x730"><img loading="lazy" src="https://mariodjb030.github.io/2damasi/media/posts/2/gallery/Captura-de-pantalla-2025-11-03-192304-thumbnail.png" alt="" width="768" height="482"></a></figure>
+<figure class="gallery__item"><a href="https://mariodjb030.github.io/2damasi/media/posts/2/gallery/Captura-de-pantalla-2025-11-03-192357.png" data-size="1162x724"><img loading="lazy" src="https://mariodjb030.github.io/2damasi/media/posts/2/gallery/Captura-de-pantalla-2025-11-03-192357-thumbnail.png" alt="" width="768" height="479"></a></figure>
+</div></div>
+<p> </p>
+<p class="align-right"><span style="color: #236fa1;">Haz que los iconos de seleccion de hora y calendario en el modo oscuro se vean de color blanco</span></p>
+<p> </p>
+<p>¡Entendido! Tienes razón. Aunque el reproductor de video/audio ya se adapta (como se ve en la captura), los íconos de calendario y hora en los formularios también necesitan esa corrección en el modo oscuro.</p>
+<p>Para solucionarlo, voy a añadir la propiedad <code>color-scheme: dark;</code> a los campos de formulario (<code>input</code> y <code>select</code>) cuando el <code>body</code> tenga el atributo <code>data-theme="dark"</code>.</p>
+<p>Aquí tienes la modificación para el archivo <code>media_alert_app.html</code>:</p>
+<div class="attachment-container unknown"> </div>
+<p>He añadido una nueva regla CSS que le indica al navegador que debe usar los íconos blancos para esos campos de formulario (fecha, hora y selección) cuando el tema oscuro esté activo. Esto soluciona el problema de visibilidad.</p>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/2/Captura-de-pantalla-2025-11-03-193532.png" alt="" width="108" height="170" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/2/responsive/Captura-de-pantalla-2025-11-03-193532-xs.png 384w ,https://mariodjb030.github.io/2damasi/media/posts/2/responsive/Captura-de-pantalla-2025-11-03-193532-sm.png 600w ,https://mariodjb030.github.io/2damasi/media/posts/2/responsive/Captura-de-pantalla-2025-11-03-193532-md.png 768w ,https://mariodjb030.github.io/2damasi/media/posts/2/responsive/Captura-de-pantalla-2025-11-03-193532-lg.png 1200w ,https://mariodjb030.github.io/2damasi/media/posts/2/responsive/Captura-de-pantalla-2025-11-03-193532-xl.png 1600w"></figure>
+<p> </p>
+<p class="align-right"><span style="color: #236fa1;">Quiero cambies la pantalla de crear alertas por un calendario, que al darle clic al un día en concreto se pueda crear la alerta, además las alertas que se hayan creado deben aparecer en el calendario y al clicar con el ratón o el dedo (en móvil) durante 3 segundos en el evento/alerta se elimina, cuando pasé eso haz que haya una animación que vuelva la alerta poco a poco de color rojo de derecha a izquierda hasta pasar los 3 segundos que será completamente rojo y se eliminará </span></p>
+<p>Este es un cambio de funcionalidad grande y muy interesante! Convertir el formulario en un calendario interactivo con gestión de eventos mediante "pulsación larga" (long press) es un gran reto.</p>
+<p>He modificado el archivo <code>media_alert_app.html</code> para implementar exactamente lo que pides.</p>
+<p><strong>Resumen de los cambios:</strong></p>
+<ol start="1">
+<li>
+<p><strong>Calendario Interactivo:</strong> He eliminado la sección "Crear Nueva Alerta" y la he reemplazado por un calendario completo, construido con Vanilla JS.</p>
+</li>
+<li>
+<p><strong>Navegación:</strong> El calendario muestra el mes y año actual, y puedes navegar con los botones "&lt;" (anterior) y "&gt;" (siguiente).</p>
+</li>
+<li>
+<p><strong>Visualización de Alertas:</strong> Las alertas guardadas en <code>localStorage</code> ahora se dibujan directamente en el calendario como pequeños "eventos".</p>
+</li>
+<li>
+<p><strong>Modal de Creación:</strong> Al hacer clic en cualquier día del calendario, se abre un modal que contiene el formulario de creación de alertas (el que teníamos antes). La fecha de ese día se rellena automáticamente.</p>
+</li>
+<li>
+<p><strong>Eliminación con Pulsación Larga (3s):</strong></p>
+<ul>
+<li>
+<p>Si mantienes presionado (con el ratón o el dedo) un evento de alerta en el calendario, se iniciará la animación.</p>
+</li>
+<li>
+<p><strong>Animación:</strong> Una superposición roja llenará el evento de derecha a izquierda durante 3 segundos.</p>
+</li>
+<li>
+<p>Si sueltas antes de los 3 segundos, la animación se cancela.</p>
+</li>
+<li>
+<p>Si completas los 3 segundos, el evento se vuelve rojo, la alerta se elimina del <code>localStorage</code> y el calendario se actualiza.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Barra Lateral:</strong> He eliminado la lista "Alertas Activas" de la barra lateral, ya que el calendario la reemplaza.</p>
+</li>
+</ol>
+<p>Aquí tienes el código actualizado:</p>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/2/Captura-de-pantalla-2025-11-03-194702.png" alt="" width="940" height="757" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/2/responsive/Captura-de-pantalla-2025-11-03-194702-xs.png 384w ,https://mariodjb030.github.io/2damasi/media/posts/2/responsive/Captura-de-pantalla-2025-11-03-194702-sm.png 600w ,https://mariodjb030.github.io/2damasi/media/posts/2/responsive/Captura-de-pantalla-2025-11-03-194702-md.png 768w ,https://mariodjb030.github.io/2damasi/media/posts/2/responsive/Captura-de-pantalla-2025-11-03-194702-lg.png 1200w ,https://mariodjb030.github.io/2damasi/media/posts/2/responsive/Captura-de-pantalla-2025-11-03-194702-xl.png 1600w"></figure>
+<p class="align-right"><span style="color: #236fa1;">Al hacer clic en un dia, en el creador de alertas aparece el dia anterior, por ejemplo si </span><span style="color: #236fa1;">pongo el dia 4 de noviembre sale el 3</span></p>
+<p>¡Buena captura! Tienes toda la razón. Es un error clásico relacionado con las zonas horarias.</p>
+<p>El problema es que <code>cellDate.toISOString()</code> convierte la fecha a UTC (GMT+0). Si estás en España (GMT+1 o +2), al crear la fecha "4 de noviembre" a medianoche (<code>00:00</code>), <code>toISOString</code> la convierte a "3 de noviembre a las 23:00" en UTC, y por eso te muestra el día anterior.</p>
+<p>Para solucionarlo, voy a construir la cadena de fecha <code>YYYY-MM-DD</code> manualmente usando las variables locales del calendario, en lugar de usar <code>toISOString()</code>.</p>
+<p>Aquí tienes la corrección para <code>media_alert_app.html</code>:</p>
+<div class="attachment-container unknown"> </div>
+<p>He reemplazado la línea que usaba <code>toISOString()</code> por una construcción manual que usa directamente el <code>año</code>, <code>mes + 1</code> y <code>día</code> que ya teníamos. Esto asegura que la fecha que clicas sea exactamente la que se pasa al modal, sin importar tu zona horaria.</p>
+<p>*Solucionado</p>
+<p class="align-right"><br><span style="color: #236fa1;">Reduce el tiempo para borrar el evento a 1,5 segundos</span></p>
+<p>*Cambio realizado correctamente<br><br></p>
+<p> </p>
+<p class="align-right"><span style="color: #236fa1;">Haz que se pueda poner pantalla completa a los videos, ahora mismo no deja hacerlo</span></p>
+<p> </p>
+<p>*Solucionado</p>
+<p> </p>
+<p class="align-right"><span style="color: #236fa1;">Haz que debajo de la lista de la biblioteca apareza la lista de eventos del calendario</span></p>
+<p class="align-center"><span style="color: #e03e2d;">En este punto por alguna razon a eliminado el codigo y solo pone:<br>[Immersive content redacted for brevity.]<br>Por lo que cambio a otro chat</span></p>
+<p class="align-center"><span style="color: #e03e2d;"><br><br></span></p>
+<p>*Cambio realizado correctamente</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="2">
+<figure class="gallery__item"><a href="https://mariodjb030.github.io/2damasi/media/posts/2/gallery/Captura-de-pantalla-2025-11-03-202759.png" data-size="290x279"><img loading="lazy" src="https://mariodjb030.github.io/2damasi/media/posts/2/gallery/Captura-de-pantalla-2025-11-03-202759-thumbnail.png" alt="" width="290" height="279"></a></figure>
+<figure class="gallery__item"><a href="https://mariodjb030.github.io/2damasi/media/posts/2/gallery/Captura-de-pantalla-2025-11-03-202808.png" data-size="499x546"><img loading="lazy" src="https://mariodjb030.github.io/2damasi/media/posts/2/gallery/Captura-de-pantalla-2025-11-03-202808-thumbnail.png" alt="" width="499" height="546"></a></figure>
+</div></div>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Pomodoro Prompts</title>
         <author>
