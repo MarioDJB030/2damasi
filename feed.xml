@@ -3,7 +3,7 @@
     <title>2damasi</title>
     <link href="https://mariodjb030.github.io/2damasi/feed.xml" rel="self" />
     <link href="https://mariodjb030.github.io/2damasi" />
-    <updated>2025-11-25T11:58:01+01:00</updated>
+    <updated>2025-11-25T12:11:31+01:00</updated>
     <author>
         <name>Mario De Juana Baeza</name>
     </author>
@@ -21,7 +21,7 @@
         <updated>2025-11-25T11:18:32+01:00</updated>
             <summary>
                 <![CDATA[
-                    Equipo formado por: - Mario De Juana Baeza - Adrian Aviles Sanchez - Antonio Garcia En esta primera fase del&hellip;
+                    Equipo formado por: - Mario De Juana Baeza - Adrian Aviles Sanchez - Antonio Garcia En esta práctica realizaremos y&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -29,6 +29,7 @@
                 <figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/4/IMG20251113194517.jpg" alt="" width="6560" height="4928" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/4/responsive/IMG20251113194517-xs.jpg 384w ,https://mariodjb030.github.io/2damasi/media/posts/4/responsive/IMG20251113194517-sm.jpg 600w ,https://mariodjb030.github.io/2damasi/media/posts/4/responsive/IMG20251113194517-md.jpg 768w ,https://mariodjb030.github.io/2damasi/media/posts/4/responsive/IMG20251113194517-lg.jpg 1200w ,https://mariodjb030.github.io/2damasi/media/posts/4/responsive/IMG20251113194517-xl.jpg 1600w"></figure>
 <p>Equipo formado por:</p>
 <p>- Mario De Juana Baeza<br>- Adrian Aviles Sanchez<br>- Antonio Garcia</p>
+<p>En esta práctica realizaremos y documentaremos la configuración inicial completa de una Raspberry Pi y un Mac Mini, ajustando los parámetros de región, idioma y conectividad. Siguiendo las directrices del aula, unificaremos el acceso creando el usuario <code>aulaateca26</code> y conectaremos ambos equipos a la red <code>Wifi_AULA_ATECA</code> para dejarlos totalmente operativos.</p>
 <h1><span style="text-decoration: underline;"><strong>Raspberry Pi</strong></span></h1>
 <h3>Configuración Regional (Set Country)</h3>
 <p> </p>
