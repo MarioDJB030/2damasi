@@ -3,19 +3,20 @@
     <title>2damasi</title>
     <link href="https://mariodjb030.github.io/2damasi/feed.xml" rel="self" />
     <link href="https://mariodjb030.github.io/2damasi" />
-    <updated>2025-12-04T12:50:17+01:00</updated>
+    <updated>2025-12-04T13:02:58+01:00</updated>
     <author>
         <name>Mario De Juana Baeza</name>
     </author>
     <id>https://mariodjb030.github.io/2damasi</id>
 
     <entry>
-        <title>Configuración inicial de la jetson nano</title>
+        <title>Configuración inicial de la Jetson Nano</title>
         <author>
             <name>Mario De Juana Baeza</name>
         </author>
         <link href="https://mariodjb030.github.io/2damasi/configuracion-inicial-de-la-jetson-nano.html"/>
         <id>https://mariodjb030.github.io/2damasi/configuracion-inicial-de-la-jetson-nano.html</id>
+            <category term="IA - Ampliación de Sistemas Informáticos"/>
 
         <updated>2025-12-04T12:50:17+01:00</updated>
             <summary>
