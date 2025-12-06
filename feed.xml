@@ -3,7 +3,7 @@
     <title>2damasi</title>
     <link href="https://mariodjb030.github.io/2damasi/feed.xml" rel="self" />
     <link href="https://mariodjb030.github.io/2damasi" />
-    <updated>2025-12-04T13:02:58+01:00</updated>
+    <updated>2025-12-06T11:13:00+01:00</updated>
     <author>
         <name>Mario De Juana Baeza</name>
     </author>
@@ -257,10 +257,130 @@
 </ol>
 <p>Con este último paso, el kit de desarrollo NVIDIA Jetson Nano está completamente configurado, actualizado y listo para iniciar.</p>
 <figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/Captura-de-pantalla-2025-12-04-124840.png" alt="" width="473" height="397" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-04-124840-xs.png 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-04-124840-sm.png 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-04-124840-md.png 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-04-124840-lg.png 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-04-124840-xl.png 1600w"></figure>
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
+<h3 data-path-to-node="2">Configuración del Almacenamiento NVMe</h3>
+<p data-path-to-node="3"><strong>Paso 1: Acceso a la Documentación Oficial</strong></p>
+<p data-path-to-node="4">Para guiar la configuración del entorno de Inteligencia Artificial, utilizaremos los recursos oficiales de NVIDIA.</p>
+<ol start="1" data-path-to-node="5">
+<li>
+<p data-path-to-node="5,0,0">Abrimos el navegador web y buscamos <strong>"Jetson AI Lab"</strong>.</p>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/IMG20251127194638-2.jpg" alt="" width="4096" height="3072" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127194638-2-xs.jpg 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127194638-2-sm.jpg 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127194638-2-md.jpg 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127194638-2-lg.jpg 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127194638-2-xl.jpg 1600w"></figure>
+</li>
+<li>
+<p data-path-to-node="5,1,0">Dentro de la página principal, hacemos clic en el botón <strong>Explore Tutorials</strong> (Explorar tutoriales).</p>
+</li>
+<li>
+<p data-path-to-node="5,2,0">Seleccionamos la guía <strong>Jetson Setup Guide</strong>.</p>
+<ul data-path-to-node="5,2,1">
+<li>
+<p data-path-to-node="5,2,1,0,0"><i>Nota: La sección de "Physical Installation" (Instalación física) ya fue realizada previamente, por lo que pasaremos directamente a la configuración del software.</i></p>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/IMG20251127195341.jpg" alt="" width="4096" height="3072" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127195341-xs.jpg 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127195341-sm.jpg 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127195341-md.jpg 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127195341-lg.jpg 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127195341-xl.jpg 1600w"></figure>
+<p data-path-to-node="7"><strong>Paso 2: Verificación del Disco NVMe</strong></p>
+<p data-path-to-node="8">Antes de configurar el almacenamiento, debemos verificar que el sistema detecta correctamente el disco NVMe instalado.</p>
+<ol start="1" data-path-to-node="9">
+<li>
+<p data-path-to-node="9,0,0">Abrimos una nueva terminal utilizando el atajo de teclado <strong>Ctrl + Alt + T</strong>.</p>
+</li>
+<li>
+<p data-path-to-node="9,1,0">Ejecutamos el comando <code>lspci</code> para listar los dispositivos PCI conectados.</p>
+</li>
+<li>
+<p data-path-to-node="9,2,0">A continuación, utilizamos el comando <code>lsblk</code> para ver los dispositivos de bloque y sus puntos de montaje.</p>
+<ul data-path-to-node="9,2,1">
+<li>
+<p data-path-to-node="9,2,1,0,0">En este punto, revisamos la salida del comando para confirmar que el <strong>disco NVMe</strong> aparece listado (generalmente como <code>nvme0n1</code>), aunque aún no esté montado.</p>
+</li>
+</ul>
+</li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/IMG20251127195552.jpg" alt="" width="4096" height="3072" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127195552-xs.jpg 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127195552-sm.jpg 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127195552-md.jpg 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127195552-lg.jpg 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127195552-xl.jpg 1600w"></figure>
+<p data-path-to-node="11"><strong>Paso 3: Formateo y Montaje del Disco</strong></p>
+<p data-path-to-node="12">Para utilizar el disco NVMe como almacenamiento principal para nuestros modelos, debemos formatearlo y montarlo en el sistema de archivos. Ejecutamos los siguientes comandos en orden:</p>
+<ol start="1" data-path-to-node="13">
+<li>
+<p data-path-to-node="13,0,0">Formateamos el disco al sistema de archivos ext4: <code>sudo mkfs.ext4 /dev/nvme0n1</code></p>
+</li>
+<li>
+<p data-path-to-node="13,1,0">Creamos el directorio donde se montará el disco: <code>sudo mkdir /ssd</code></p>
+</li>
+<li>
+<p data-path-to-node="13,2,0">Montamos el disco en el directorio creado: <code>sudo mount /dev/nvme0n1 /ssd</code></p>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/Captura-de-pantalla-2025-12-06-105733.png" alt="" width="582" height="309" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105733-xs.png 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105733-sm.png 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105733-md.png 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105733-lg.png 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105733-xl.png 1600w"></figure>
+</li>
+<li>
+<p data-path-to-node="13,3,0">Verificamos el montaje con: <code>lsblk -f</code></p>
+</li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/Captura-de-pantalla-2025-12-06-105740.png" alt="" width="545" height="358" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105740-xs.png 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105740-sm.png 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105740-md.png 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105740-lg.png 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105740-xl.png 1600w"></figure>
+<p data-path-to-node="14">Para hacer que este montaje sea permanente tras reiniciar, debemos editar el archivo <strong>fstab</strong>. Ejecutamos <code>sudo nano /etc/fstab</code> y añadimos la línea de configuración correspondiente al nuevo disco (consultar captura de pantalla para la línea exacta).</p>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/Captura-de-pantalla-2025-12-06-105829.png" alt="" width="639" height="245" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105829-xs.png 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105829-sm.png 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105829-md.png 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105829-lg.png 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-105829-xl.png 1600w"></figure>
+<h3 data-path-to-node="16">Instalación de LM Studio y Entorno de IA</h3>
+<p data-path-to-node="17"><strong>Paso 4: Instalación de Dependencias (Libfuse)</strong></p>
+<p data-path-to-node="18">Para ejecutar aplicaciones en formato <strong>AppImage</strong> (como LM Studio) en Ubuntu 22.04, es necesario instalar las librerías de compatibilidad FUSE.</p>
+<ol start="1" data-path-to-node="19">
+<li>
+<p data-path-to-node="19,0,0">Instalamos <strong>libfuse2</strong> con el comando: <code>sudo apt install libfuse2</code></p>
+</li>
+<li>
+<p data-path-to-node="19,1,0">Instalamos las librerías de <strong>fuse3</strong> necesarias: <code>sudo apt install libfuse3 fuse3</code></p>
+</li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/Captura-de-pantalla-2025-12-06-110119.png" alt="" width="856" height="305" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110119-xs.png 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110119-sm.png 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110119-md.png 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110119-lg.png 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110119-xl.png 1600w"></figure>
+<p data-path-to-node="21"><strong>Paso 5: Ejecución de LM Studio</strong></p>
+<p data-path-to-node="22">Una vez descargado el archivo AppImage de <strong>LM Studio</strong> y montado el disco:</p>
+<ol start="1" data-path-to-node="23">
+<li>
+<p data-path-to-node="23,0,0">Damos <strong>permisos de ejecución</strong> al archivo AppImage (clic derecho &gt; Propiedades &gt; Permisos o vía terminal).</p>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/Captura-de-pantalla-2025-12-06-110145.png" alt="" width="537" height="340" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110145-xs.png 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110145-sm.png 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110145-md.png 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110145-lg.png 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110145-xl.png 1600w"></figure>
+</li>
+<li>
+<p data-path-to-node="23,1,0">Lanzamos la aplicación <strong>LM Studio</strong>.</p>
+</li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/Captura-de-pantalla-2025-12-06-110158.png" alt="" width="587" height="421" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110158-xs.png 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110158-sm.png 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110158-md.png 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110158-lg.png 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110158-xl.png 1600w"></figure>
+<p data-path-to-node="25"><strong>Paso 6: Descarga del Modelo de IA</strong></p>
+<p data-path-to-node="26">Con LM Studio abierto, procederemos a descargar un modelo de lenguaje para probar el rendimiento.</p>
+<ol start="1" data-path-to-node="27">
+<li>
+<p data-path-to-node="27,0,0">En la barra lateral izquierda, hacemos clic en el icono de la <strong>lupa</strong> para buscar modelos.</p>
+</li>
+<li>
+<p data-path-to-node="27,1,0">En el buscador escribimos: <strong>qwen3-vl-4b</strong>.</p>
+</li>
+<li>
+<p data-path-to-node="27,2,0">En el panel derecho veremos la <strong>ficha del modelo</strong>.</p>
+<ul data-path-to-node="27,2,1">
+<li>
+<p data-path-to-node="27,2,1,0,0"><strong>Dato importante:</strong> En la sección <strong>Params</strong>, veremos <strong>4B</strong>. Esto significa <strong>4 Billions</strong> (4 mil millones en español), que hace referencia al número de parámetros (las líneas que unen las neuronas de la red) que tiene el modelo.</p>
+</li>
+</ul>
+</li>
+<li>
+<p data-path-to-node="27,3,0">Hacemos clic en el botón verde <strong>Download</strong> para guardarlo en nuestro disco NVMe.</p>
+</li>
+</ol>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/Captura-de-pantalla-2025-12-06-110221.png" alt="" width="461" height="454" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110221-xs.png 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110221-sm.png 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110221-md.png 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110221-lg.png 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/Captura-de-pantalla-2025-12-06-110221-xl.png 1600w"></figure>
+<p data-path-to-node="29"><strong>Paso 7: Prueba de Funcionamiento (Inferencia)</strong></p>
+<p data-path-to-node="30">Finalmente, comprobamos que el modelo funciona correctamente en la Jetson Nano.</p>
+<ol start="1" data-path-to-node="31">
+<li>
+<p data-path-to-node="31,0,0">Hacemos clic en el icono <strong>"+"</strong> de la barra izquierda para iniciar un <strong>Nuevo Chat</strong>.</p>
+</li>
+<li>
+<p data-path-to-node="31,1,0">Cargamos el modelo descargado.</p>
+</li>
+<li>
+<p data-path-to-node="31,2,0">Escribimos un mensaje de prueba, como <strong>"Hola"</strong>.</p>
+</li>
+<li>
+<p data-path-to-node="31,3,0">Observamos la respuesta y nos fijamos en el contador de <strong>Tokens per second</strong> (t/s), que indica la velocidad a la que la IA es capaz de generar texto en este hardware.</p>
+</li>
+</ol>
+<p>(No nos dio tiempo a probarla)</p>
+<figure class="post__image"><img loading="lazy"  src="https://mariodjb030.github.io/2damasi/media/posts/5/IMG20251127211526-2.jpg" alt="" width="4096" height="3072" sizes="(min-width: 37.5em) 1600px, 80vw" srcset="https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127211526-2-xs.jpg 384w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127211526-2-sm.jpg 600w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127211526-2-md.jpg 768w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127211526-2-lg.jpg 1200w ,https://mariodjb030.github.io/2damasi/media/posts/5/responsive/IMG20251127211526-2-xl.jpg 1600w"></figure>
 <p> </p>
 <p> </p>
 <p> </p>
